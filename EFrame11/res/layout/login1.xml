@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/widget54"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    
+    >
+<RelativeLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:id="@+id/rLogin"
+        android:padding="5px"
+    	>
+
+	<TextView  
+		android:id="@+id/wel"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:textStyle="bold"
+    	android:gravity="center_vertical|center_horizontal"
+    	android:textColor="#000000"
+    	android:textSize="10px"
+   	 	android:text="Welcome To Elite PictureFrame!!"
+    	/>
+    	<Button 
+			android:id="@+id/back" 
+			android:layout_below="@id/wel"
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:background="@drawable/back"
+			android:layout_alignParentRight="true"
+			/> 
+    	<TextView  
+		android:id="@+id/lo"
+		android:layout_below="@id/back"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:textSize="20px"
+    	android:typeface="serif"
+    	android:gravity="center_vertical|center_horizontal"
+    	android:textColor="#000000"
+    	android:text="LOGIN"
+    	/>
+   
+   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l1"
+    android:paddingTop="20px"
+    android:layout_below="@id/lo"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <RadioGroup
+      android:id="@+id/n1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <RelativeLayout 
+        android:id="@+id/RelativeLayout01" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content">
+        <RadioButton 
+        	android:text="Email ID: " 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:id="@+id/email_button" 
+            android:checked="true"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            >
+        </RadioButton>
+        <EditText 
+            android:layout_width="200px" 
+            android:layout_height="wrap_content" 
+            android:id="@+id/email" 
+            android:layout_toRightOf="@+id/email_button" 
+            >
+        </EditText>
+		<RadioButton 
+        	android:text="Phone Number: " 
+        	android:layout_below="@id/email_button"
+        	android:textStyle="bold"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:id="@+id/phone_button" 
+            android:textColor="#000000"
+            >
+        </RadioButton>
+        <EditText 
+            android:layout_width="150px" 
+            android:layout_below="@id/email"
+            android:layout_height="wrap_content" 
+            android:id="@+id/phone" 
+            android:phoneNumber="true"
+            android:layout_toRightOf="@+id/phone_button" 
+            >
+        </EditText>
+	</RelativeLayout>
+    </RadioGroup>
+   
+   		
+			
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l2"
+    android:paddingTop="10px"
+    android:layout_below="@id/l1"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <TextView 
+					android:id="@+id/t2" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textColor="#000000" 
+					android:textStyle="bold"
+					android:layout_gravity="center"
+					android:text="Password: "
+					/>
+				<EditText 
+					android:id="@+id/pwd" 
+					android:layout_toRightOf="@id/t2" 
+					android:layout_width="150px" 
+					android:background="#E6E6E6"
+					android:typeface="serif"
+					android:layout_height="wrap_content" 
+					android:password="true" 
+					
+					/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l3"
+    android:paddingTop="20px"
+    android:layout_below="@id/l2"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    		<Button 
+				android:id="@+id/login" 
+				android:layout_below="@id/t2"
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				android:background="@drawable/login"
+				/> 
+			<Button 
+				android:id="@+id/reset" 
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				android:background="@drawable/reset"
+				/> 
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l61"
+    android:paddingTop="10px"
+    android:layout_below="@id/l3"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	<TextView
+		android:id="@+id/register" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:textStyle="bold"
+		android:layout_gravity="center"
+		android:textColor="#6666FF"
+		android:autoLink="none"
+		android:text="" 
+		/>
+	</LinearLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l6"
+    android:paddingTop="10px"
+    android:layout_below="@id/l61"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	<TextView
+		android:id="@+id/register" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:textStyle="bold"
+		android:layout_gravity="center"
+		android:textColor="#6666FF"
+		android:autoLink="none"
+		android:text="" 
+		/>
+	</LinearLayout>
+    
+ 	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/l4"
+    android:paddingTop="10px"
+    android:layout_below="@id/l61"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+	<TextView
+		android:id="@+id/text1" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content"
+		android:textStyle="bold"
+		android:layout_gravity="center"
+		android:textColor="#FF0000"
+		android:text="" 
+		/>
+		</LinearLayout>
+		
+		
+</RelativeLayout>
+</ScrollView>
